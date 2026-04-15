@@ -20,15 +20,19 @@
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
+            <select class="selecao-primeira-moeda">
+                <option value="real">R$ Real</option>
+                <option value="dolar">US$ Dólar Americano</option>            
+                <option value="euro">€ Euro </option>
+                <option value="yuan">¥ Yuan </option>
             </select>
         </label>
 
 
         <label>
             Converter <b>para</b>
-            <select class="selecao-moeda">
+            <select class="selecao-segunda-moeda">
+                <option value="real">R$ Real</option>
                 <option value="dolar">US$ Dólar Americano</option>            
                 <option value="euro">€ Euro </option>
                 <option value="yuan">¥ Yuan </option>
@@ -36,21 +40,21 @@
         </label>
 
         Valor a ser convertido
-        <input class="currency-input" placeholder="Digite o valor">
+        <input class="valor-input" placeholder="Digite o valor">
 
-        <button class="convertbutton">Converter</button>
+        <button class="botaoconverter">Converter</button>
 
         <section>
-            <div class="moeda-container">
-                <img src="./img/Real.jpg" alt="moeda Real a ser convertida" height="40px" width="40px">
-                <p class="currency">Real</p>
+            <div class="primeira-moeda-para-conversao">
+                <img class="simbolo-primeira-img" src="./img/Real.jpg" alt="moeda Real a ser convertida" height="40px" width="40px">
+                <p class="moeda">Real</p>
                 <p class="valor-a-ser-convertido">R$ 0,00</p>
             </div>
 
             <img src="./img/Seta.jpg" alt="seta" height="40px" class="seta-image">
 
-            <div class="moeda-container">
-                <img class="currency-img" src="./img/Dolar.jpg" alt="moeda Dólar Americano convertida" height="40px">
+            <div class="segunda-moeda-para-conversao">
+                <img class="simbolo-segunda-img" src="./img/Dolar.jpg" alt="moeda Dólar Americano convertida" height="40px">
                 <p class="nome-moeda">Dólar Americano</p>
                 <p class="valor-convertido">US$ 0.00</p>
             </div>

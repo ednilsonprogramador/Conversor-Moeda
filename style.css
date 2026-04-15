@@ -80,19 +80,14 @@ section{
     margin: 15px 0;
 }   
 
-.moeda-container {
+.primeira-moeda-para-conversao, .segunda-moeda-para-conversao {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 4px;
 }
-.currency {
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-}
 
-.currency-value, .currency-value-to-convert {
+.valor-a-ser-convertido, .valor-convertido {
     font-size: 20px;
     font-weight: 700;
     color: #333;
