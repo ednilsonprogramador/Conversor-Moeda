@@ -121,7 +121,7 @@ function converterMoeda(){
                 simboloPrimeiraMoeda.src = './img/Real.jpg';
             }  
         } 
-        converterMoeda()
+
 
      function atualizarSimboloSegundaMoeda() {
             const SegundaMoeda = document.querySelector('.nome-moeda');
